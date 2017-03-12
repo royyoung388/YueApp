@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的用户名"
+            android:textColorHint="#95A1AA"
+            android:layout_gravity="bottom"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:inputType="numberPassword"
+            android:selectAllOnFocus="true"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的密码"
+            android:textColorHint="#95A1AA"
+            android:layout_gravity="bottom"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="登录"
+        android:textSize="25dp"/>
+</LinearLayout>
