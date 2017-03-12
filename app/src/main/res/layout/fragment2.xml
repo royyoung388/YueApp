@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/toip"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2"
-        android:textSize="50dp" />
-</LinearLayout>
+        android:selectAllOnFocus="true"
+        android:hint="请输入ip"
+        android:textColorHint="#95A1AA"
+        android:layout_gravity="bottom"
+        android:layout_alignParentStart="true">
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_margin="8dp"
+            android:id="@+id/send"
+            android:textSize="16dp"
+            android:text="发送"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toip"
+        android:layout_above="@id/linear">
+        <LinearLayout
+            android:id="@+id/show"
+            android:gravity="center"
+            android:background="#d5d5d5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</RelativeLayout>

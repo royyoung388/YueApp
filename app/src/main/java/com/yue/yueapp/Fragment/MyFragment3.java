@@ -9,24 +9,23 @@ import android.widget.TextView;
 
 import com.yue.yueapp.R;
 
-
 /**
- * Created by Administrator on 2017/2/28.
+ * Created by Administrator on 2017/3/12.
  */
 
-public class MyFragment1 extends Fragment {
+public class MyFragment3 extends Fragment {
 
-    public MyFragment1() {
+    public MyFragment3() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment1, container, false);
+        View view = inflater.inflate(R.layout.fragment3, container, false);
 
         //简单的布局可以在这里加载，也可以全部写在onActivityCreated里面
 
-        TextView txt_content = (TextView) view.findViewById(R.id.text1);
-        txt_content.setText("第一个Fragment");
+        TextView txt_content = (TextView) view.findViewById(R.id.text3);
+        txt_content.setText("第三个Fragment");
         return view;
     }
 

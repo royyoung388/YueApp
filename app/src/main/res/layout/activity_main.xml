@@ -38,6 +38,10 @@
             <TextView
                 android:id="@+id/menu2"
                 style="@style/menu"
+                android:text="信息" />
+            <TextView
+                android:id="@+id/menu3"
+                style="@style/menu"
                 android:text="我的" />
         </LinearLayout>
 
@@ -49,10 +53,11 @@
             android:layout_above="@id/bt_menu"/>
 
         <FrameLayout
+            android:descendantFocusability="afterDescendants"
             android:id="@+id/frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_above="@id/bt_menu" />
     </RelativeLayout>
 </LinearLayout>
