@@ -111,7 +111,7 @@ public class MyFragment2 extends Fragment implements View.OnClickListener {
                 Socket socket = null;
                 try {
                     //创建一个流套接字并将其连接到指定主机上的指定端口号
-                    socket = new Socket("10.129.101.12", 8888);
+                    socket = new Socket("10.129.44.225", 8888);
 
                     //读取服务器端数据
                     DataInputStream input = new DataInputStream(socket.getInputStream());
