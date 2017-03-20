@@ -1,15 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/my"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#1bff95">
+
+        <ImageView
+            android:id="@+id/my_imag"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/image"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_yue"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3"
-        android:textSize="50dp" />
-</LinearLayout>
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:selectAllOnFocus="true"
+            android:hint="请输入你想约的活动"
+            android:textColorHint="#95A1AA"
+            android:gravity="bottom"
+            android:singleLine="true">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="想约"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/input_yue"
+        android:layout_below="@id/my">
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -28,7 +28,7 @@ public class Welcome extends AppCompatActivity {
         其中前面两个是抽象方法，所以要重写一下。
         CountDownTimer构造器的两个参数分别是第一个参数表示总时间，第二个参数表示间隔时间。
         意思就是每隔xxx会回调一次方法onTick，然后xxx之后会回调onFinish方法。*/
-        CountDownTimer timer = new CountDownTimer(4000,1000) {
+        CountDownTimer timer = new CountDownTimer(3000,1000) {
             //运行时
             public void onTick(long millisUntilFinished) {
                 counter.setText("倒计时: " + millisUntilFinished / 1000);

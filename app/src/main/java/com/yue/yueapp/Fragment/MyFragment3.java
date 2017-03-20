@@ -23,9 +23,6 @@ public class MyFragment3 extends Fragment {
         View view = inflater.inflate(R.layout.fragment3, container, false);
 
         //简单的布局可以在这里加载，也可以全部写在onActivityCreated里面
-
-        TextView txt_content = (TextView) view.findViewById(R.id.text3);
-        txt_content.setText("第三个Fragment");
         return view;
     }
 
